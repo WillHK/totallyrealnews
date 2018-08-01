@@ -1,0 +1,44 @@
+{
+  "name": "totallyrealnews",
+  "version": "0.1.0",
+  "description": "Totally real news aggregator",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon server.js",
+    "bundle": "webpack",
+    "test": "mocha"
+  },
+  "keywords": [
+    "news",
+    "aggregator"
+  ],
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "author": "Will Haeck",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "react-hot-loader": "^4.3.4"
+  }
+}
