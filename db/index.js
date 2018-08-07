@@ -1,9 +1,9 @@
 const { Pool } = require('pg');
 
-const connectionString = 'postgres://kxsyyapj:E1PFbXchRF0-vnmpPIkd2DAkE66Nhy-0@stampy.db.elephantsql.com:5432/kxsyyapj';
+const connectionString = process.env.PG_CONNECTION_URI;
 const pool = new Pool({
   connectionString: connectionString,
-  max: 100,
+  max: 4,
 });
 
 let connections = [];
